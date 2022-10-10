@@ -1,0 +1,152 @@
+.home{
+    background-color:#f0f0f0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    font-family: Playfair Display;
+    height: 800px;
+
+}
+
+.home .intro{
+
+    animation: fadeInAnimation ease .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    border-radius: 25px;
+    position: center;
+    display: flex;
+    /*background-color: #ff9800;*/
+    background-color: #f8f6f6;
+
+    width: 600px;
+    /*height: 270px; */
+    margin: 0 auto;
+    box-shadow: 5px 10px #dddddd;
+    transition: transform .2s; /* Animation */
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+  }
+
+.home .intro:hover{
+    transform: scale(1.05);
+}
+
+
+p {
+    /* Center horizontally*/
+    text-align: center;
+    padding: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.p{
+    width: 400px;
+}
+.left{
+    flex: 0.5;
+}
+
+.right{
+    flex: 0.5;
+}
+
+.home .profile{
+    height: 270px;
+}
+
+.skill-container {
+    width: 600px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.kontakt-button{
+    background-color: #3e497a; /* Green */
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: .2s;
+
+}
+
+.kontakt-button:hover {
+    cursor: pointer;
+
+    transform: scale(1.05);
+
+}
+
+.last-phrase{
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .home {
+        position: center;
+        height: 80%;
+        font-size: medium;
+    }
+
+    .home .right{
+        padding-bottom: 10px;
+    }
+
+    .home .left{
+        padding-bottom: 10px;
+    }
+
+    .home .intro{
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 55%;
+        
+    }
+
+    .home .intro .h1{
+        padding: 2px;
+    }
+
+    .skill-container {
+        width: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        margin: 0 auto;
+    }
+
+    p{
+        max-width: 85%;;
+    }
+
+    h1{
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    
+}
