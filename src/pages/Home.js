@@ -42,7 +42,7 @@ function Home() {
          software utvikling med frontend og backend. </p>
       <div className='skill-container'>
         <SkillBar skills={[
-          { type: 'Python', level: 100 },
+          { type: 'Python', level: 85 },
           { type: 'R', level: 85 },
           { type: 'C++', level: 70 },
           { type: 'Javascript', level: 50 },
